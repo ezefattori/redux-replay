@@ -1,0 +1,17 @@
+{
+    "rules": {
+	"padded-blocks": 0,
+	"no-use-before-define": [2, "nofunc"],
+	"no-unused-expressions": 0,
+        "indent": [2,"tab"],
+        "quotes": [2,"single"],
+        "linebreak-style": [2,"unix"],
+        "semi": [2,"always"]
+    },
+    "env": {
+	"mocha":true,
+        "es6": true,
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+}
