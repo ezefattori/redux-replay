@@ -63,15 +63,15 @@ import { REMOTE } from "redux-replay";
 //Remote storage
 const store = createStore(
   rootReducer,
-	initialState, 
-	applyMiddleware(otherMiddleware,replayMiddleware(REMOTE,"http://www.replay-server.com",pollingInterval))
+  initialState, 
+  applyMiddleware(otherMiddleware,replayMiddleware(REMOTE,"http://www.replay-server.com",pollingInterval))
 )
 
 //Local storage
 const store = createStore(
   rootReducer,
   initialState, 
-	applyMiddleware(otherMiddleware,replayMiddleware(LOCAL))
+  applyMiddleware(otherMiddleware,replayMiddleware(LOCAL))
 )
 ```
 In both cases `LOCAL` and `REMOTE`, redux-replay uses the local storage from the browser as temporal storage. To work properly, the middleware assumes that the store in empty, or at least that the keys `actionsLog`, `replayState` and `recordToken` are undefined.
