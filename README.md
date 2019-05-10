@@ -2,7 +2,7 @@
 
 A [Redux](https://redux.js.org/) middleware that records and replays actions in a timely manner. Works with the local storage of the browser or with a remote server.
 
-  [![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url]
+  [![NPM Version][npm-image]][npm-url] 
 
 
 ```js
