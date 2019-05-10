@@ -13,8 +13,8 @@ import { LOCAL } from "redux-replay";
 import { REMOTE } from "redux-replay";
 
 const store = createStore(
-  rootReducer,
-	initialState, 
+	rootReducer,
+	initialState,
 	applyMiddleware(replayMiddleware(REMOTE,"http://www.replay-server.com",pollingInterval))
 )
 ```
